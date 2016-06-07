@@ -22,10 +22,7 @@ namespace TestClass
         [TestCase(1, 2, 3)]
         [TestCase(2, 6, 8)]
         [TestCase(-1, 9, 8)]
-        public void TestCong(int a, int b, int kq)
-        {
-            Assert.AreEqual(kq, _cal.Cong(a, b));
-        }
+        public void TestCong(int a, int b, int kq) => Assert.AreEqual(kq, _cal.Cong(a, b));
 
         [TestCase(0, 3, 0)]
         [TestCase(3, 0, 0)]
